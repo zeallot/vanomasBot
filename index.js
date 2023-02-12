@@ -3,7 +3,7 @@ const { voices } = require("./voices");
 require("dotenv").config();
 
 const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, { polling: true });
-
+console.log("test");
 bot.on("inline_query", async (msg) => {
   await bot.answerInlineQuery(
     msg.id,
